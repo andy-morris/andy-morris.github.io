@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap);
+
+:root {
+  --color-primary-0: #295B3B;
+  --color-primary-3: #174C2B;
+  --color-primary-4: #083418;
+
+  --color-complement-2: #A46659;
+  --color-complement-4: #48150B;
+
+  background: var(--color-primary-0) url("../images/congruent_outline.png");
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 20pt;
+  color: black;
+  line-height: 175%;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  border-radius: 1em;
+  box-shadow: 0 10px 10px 0 var(--color-primary-4);
+
+  padding: 2em;
+
+  background: #ECECEC url("../images/paper.png");
+
+  min-width: 15em;
+  max-width: 30em;
+  text-align: center;
+}
+
+:first-child { margin-top:    0; }
+:last-child  { margin-bottom: 0; }
+
+ul { padding-left: 0; }
+li { list-style: none; }
+
+h1 {
+  font-size: 36pt;
+  font-weight: 900;
+  color: var(--color-primary-3);
+}
+h1:before { content: "."; color: transparent; }
+
+
+.links { columns: 2; }
+
+a {
+  text-decoration: none;
+  color: var(--color-complement-4);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--color-complement-2);
+}
